@@ -22,6 +22,9 @@ For example, given the sequence [2, 1, 5, 7, 2, 0, 5], your algorithm should pri
 #include <fstream>
 
 void problem33() {
+	std::cout << "Problem #33 takes a stream of numbers and ";
+	std::cout << "prints out the median of the list so far on each new element. " << std::endl;
+	std::cout << "The default provided list is: [2, 1, 5, 7, 2, 0, 5] " << std::endl;
 	std::vector<int> arr = { 2, 1, 5, 7, 2, 0, 5};
 	auto n = arr.size();
 
@@ -47,15 +50,14 @@ void problem33() {
 			//std::cout << "List size is odd\n";
 			auto middleIndex = tempVector.size() / 2;
 			float median = tempVector[middleIndex];
-			std::cout << "Median for odd: " << median << std::endl;
+			std::cout << median << std::endl;
 		}
 		else if (tempSize % 2 == 0) {
-			std::cout << "List size is even\n";
 			auto middleIndex = tempVector.size() / 2;
 			float middleValue = tempVector[middleIndex - 1];
 			float middlePlusOne = tempVector[middleIndex];
 			float median = (middleValue + middlePlusOne) / 2;
-			std::cout << "Median for even: " << median << std::endl;
+			std::cout  << median << std::endl;
 		}
 	
 	}
