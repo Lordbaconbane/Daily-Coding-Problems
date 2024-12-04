@@ -59,6 +59,5 @@ void problem33() {
 			float median = (middleValue + middlePlusOne) / 2;
 			std::cout  << median << std::endl;
 		}
-	
 	}
 }
